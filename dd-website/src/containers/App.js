@@ -1,10 +1,11 @@
 import React from 'react';
-import './App.css';
+import '../styles/App.css';
+import * as Components from '../components';
 
 function App() {
   return (
     <div className="App">
-     
+      <Components.NavigationBar />
     </div>
   );
 }
