@@ -2,6 +2,9 @@ import React from 'react';
 
 const style = {
     'color': 'white',
+    'font-family': 'Hind Siliguri',
+    'font-weight': 'bold',
+    'font-size': '2em',
 }
 
 

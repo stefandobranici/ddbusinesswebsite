@@ -1,9 +1,4 @@
 export const HeroContent = {
-    title: "DD Web Development",
-    content: "At DC Modern Web we have a shared goal of facilitating positive change within your business by using the most modern technologies that respond to your business needs in a timely & cost effective manner.\
-      \
-    It can be daunting to find a reliable partner that keeps up to date with modern technologies to deliver cost effective and secure solutions .\
-    Which is why here at DC Modern Web we offer end-to-end solutions from Cloud integration , Cyber security  and  React development  to SEO and Copywriting while building a trustworthy and lasting relationship with our clients.\
-\
-    DC Modern Web can help you achieve your business goals while freeing up your calendar in the shortest possible timeframe."
+    title: "Improve Conversion Rates Through Modern Web",
+    content: `At DC Modern Web we have a shared goal of facilitating positive change within your business by using the most modern technologies that respond to your business needs in a timely & cost effective manner. \n It can be daunting to find a reliable partner that keeps up to date with modern technologies to deliver cost effective and secure solutions . \n\n Which is why here at DC Modern Web we offer end-to-end solutions from Cloud integration , Cyber security  and  React development  to SEO and Copywriting while building a trustworthy and lasting relationship with our clients. \n DC Modern Web can help you achieve your business goals while freeing up your calendar in the shortest possible timeframe.`
 } 
