@@ -2,16 +2,18 @@ import React from 'react';
 import * as Components from '../components';
 import { HeroContent } from '../content';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import bg from '../assets/bg.png';
+import bgleft from '../assets/bgleft.png';
+import bgright from '../assets/bgright.png';
+
 
 
 const containerStyle = {
     'padding-top': '10vh',
-    'height': '80vh',
-    'background-image': `url(${bg})`,
-    'background-repeat': 'no-repeat',
-    'background-position': 'center',
-   
+    'height': '72vh',
+    'background-image': `url(${bgleft}), url(${bgright})`,
+    'background-repeat': 'no-repeat, no-repeat',
+    'background-position': 'left, right',
+    'background-size': '50vw, 50vw'
 };
 
 const rowStyle = {
@@ -21,6 +23,26 @@ const rowStyle = {
 
 const columnStyle = {
 
+}
+
+const btnStyle = {
+    'padding': '10px 20px',
+    'font-size': '30px',
+    'border-radius': '10px',
+    'width': '60%',
+    'color':'white',
+    'font-weight':'bold',
+    'border-color': '#66FCF1'
+}
+
+const scrollStyle = {
+    'behavior': 'smooth',
+    'buttonBackgroundColor': '66FCF1',
+    'iconType': 'arrow-down',
+    'fontSize': '50px',
+    'buttonColor': 'white',
+    'targetId': 'Line',
+    
 }
 
 
@@ -39,10 +61,12 @@ class Component extends React.Component {
                     </Col>
                 </Row>
                 <Row className={'justify-content-md-center'} style={rowStyle}>
-                    <Col lg="2" className={'text-center'} style={columnStyle}>
-                         <Button variant= "primary" size= "lg" >Contact Us</Button>
+                    <Col lg="3" className={'text-center'} style={columnStyle}>
+                        <a href="#" type="button" class="btn btn-outline-info btn-lg" style={btnStyle}>Contact Us</a>
                     </Col>
                 </Row>
+               
+                
             </Container>
         );
     }

@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Components.NavigationBar />
       <Containers.HeroContainer />
+      <Components.Line/>
      
     </div>
   );

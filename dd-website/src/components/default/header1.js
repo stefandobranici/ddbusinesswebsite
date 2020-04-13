@@ -1,10 +1,10 @@
 import React from 'react';
 
 const style = {
-    'color': 'white',
+    'color': '#66FCF1',
     'font-family': 'Hind Siliguri',
     'font-weight': 'bold',
-    'font-size': '2em',
+    'font-size': '3em',
 }
 
 

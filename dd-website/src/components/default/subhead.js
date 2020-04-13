@@ -12,7 +12,7 @@ class Component extends React.Component {
     render() {
         return (
             <subhead style={style}>{this.props.content}</subhead>
-
+         
         )
     };
 }
