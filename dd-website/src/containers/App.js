@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../styles/App.css';
 import * as Components from '../components';
+import * as Containers from '../bootstrap-containers';
 
 
 function App() {
   return (
     <div className="App">
       <Components.NavigationBar />
+      <Containers.HeroContainer />
+      <Components.Line/>
+     
     </div>
   );
 }
