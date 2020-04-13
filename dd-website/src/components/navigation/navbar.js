@@ -1,39 +1,21 @@
 import React from 'react';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
-
-const navbarStyle = {
-    "background-color" : "rgba(102, 252, 241, 0.0)"
-}
-
-const fontStyle = {
-    "font-family" : "Hind Siliguri",
-    "color": "rgba(102, 252, 241)"
-}
+import { Navbar, NavDropdown } from 'react-bootstrap';
+import logo from '../../assets/logo.png';
+import '../../styles/components/navbar.css';
 
 class Component extends React.Component {
     render() {
         return (
-            <Navbar collapseOnSelect style={navbarStyle} expand="lg" variant="dark">
-                <Navbar.Brand href="#home"><p style={fontStyle}>{"Dobra & Demis"}</p></Navbar.Brand>
+            <Navbar sticky="top" collapseOnSelect className="navbar" expand="lg" variant="dark">
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="mr-auto">
-                        <Nav.Link href="#features"> <p style={fontStyle}>Features</p></Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
-                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown>
-                    </Nav>
-                    <Nav>
-                        <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            Dank memes
-                        </Nav.Link>
-                    </Nav>
+                <Navbar.Collapse id="responsive-navbar-nav" className="navContainer">
+                    <NavDropdown.Item className="navbarItem" href="#home">LATEST WORK</NavDropdown.Item>
+                    <NavDropdown.Item className="navbarItem" href="#home">SERVICES</NavDropdown.Item>
+                    <Navbar.Brand href="#home" className="navbarLogoContainer">
+                        <img src={logo} className="navbarLogo" />
+                    </Navbar.Brand>
+                    <NavDropdown.Item className="navbarItem" href="#home">ABOUT US</NavDropdown.Item>
+                    <NavDropdown.Item className="navbarItem" href="#home">CONTACT US</NavDropdown.Item>
                 </Navbar.Collapse>
             </Navbar>
         );
