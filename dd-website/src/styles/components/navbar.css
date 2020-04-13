@@ -1,0 +1,67 @@
+@media (min-width: 992px){
+    .navbar {
+        background-color: rgba(102, 252, 241, 0.0);
+        margin-top: 2vh;
+    }
+
+    .navContainer {
+       text-align: center!important;
+    }
+
+    .navbarItem {
+        font-family: "Hind Siliguri";
+        font-weight: bold !important;
+        font-size: 1.6em;
+        color: rgba(69, 162, 158) !important;
+    }
+
+    .navbarItem:hover {
+        background-color: unset !important;
+    }
+
+    .navbarItem:focus {
+        background-color: unset !important;
+    }
+
+    .navbarItem:active {
+        background-color: unset !important;
+    }
+
+    .navbarLogo {
+        width: 4.9em;
+        height: 3.5em;
+    }
+}
+
+@media (max-width: 991px){
+    .navbar {
+        background-color: rgba(102, 252, 241, 0.0);
+        margin-top: 2vh;
+    }
+
+    .navContainer {
+       text-align: center!important;
+    }
+
+    .navbarItem {
+        font-family: "Hind Siliguri";
+        font-weight: bold !important;
+        color: rgba(69, 162, 158) !important;
+    }
+
+    .navbarItem:hover {
+        background-color: unset !important;
+    }
+
+    .navbarItem:focus {
+        background-color: unset !important;
+    }
+
+    .navbarItem:active {
+        background-color: unset !important;
+    }
+
+    .navbarLogoContainer {
+        display: none!important;
+    }
+}
