@@ -15,18 +15,11 @@
         color: rgba(69, 162, 158) !important;
     }
 
-    .navbarItem:hover {
+    .navbarItem:hover,.navbarItem:focus, .navbarItem:active {
         background-color: unset !important;
     }
 
-    .navbarItem:focus {
-        background-color: unset !important;
-    }
-
-    .navbarItem:active {
-        background-color: unset !important;
-    }
-
+    
     .navbarLogo {
         width: 4.9em;
         height: 3.5em;

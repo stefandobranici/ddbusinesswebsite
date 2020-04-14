@@ -4,12 +4,18 @@ import * as Components from '../components';
 import * as Containers from '../bootstrap-containers';
 
 
+const style = {
+  'color' : '#FFFFFF',
+
+}
+
 function App() {
   return (
     <div className="App">
       <Components.NavigationBar />
       <Containers.HeroContainer />
-      <Components.Line/>
+      
+
      
     </div>
   );
